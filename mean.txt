@@ -1,0 +1,29 @@
+1.Create a new folder with any name, let's say, AngularCRUD. After the folder is created, then press ctrl+shift Right click for opening the command window here.
+IN CMD
+2.npm install -g @angular/cli
+3.ng new my-app
+4.cd my-app
+IN VISUAL STUDIO
+5. open angular project my-app in vs
+IN CMD
+6.ng serve - o
+7.npm install express --save
+8.npm install mongoose -- save
+9.npm install body-parser --save
+IN VS
+10. After installing the above three packages, create a new file, server.js.
+IN CMD
+11. open new cmd run
+node server.js
+IN A CMD
+12. ng g s common –spec=false
+IN VS
+13. common.service.ts
+14. app.module.ts
+15.app.component.html
+16.app.component.ts
+17. styles.css
+IN A CMD
+18. ng server -o
+IN N cmd
+19. node server.js

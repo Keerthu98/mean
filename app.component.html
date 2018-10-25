@@ -1,0 +1,54 @@
+<h1>Customer Table Management in MEAN Stack</h1>
+<form #userForm="ngForm" (ngSubmit)="onSave(userForm.value)" novalidate>
+  <p>Ready to insert? {{userForm.valid}}</p>
+  <table>
+    <tr>
+      <td>Costumer Id</td>
+      <td>  <input name="_id" required type="text" [(ngModel)]="_id" />  </td>
+
+    </tr>
+    <tr>
+      <td>Company</td>
+      <td>
+        <!--<input name="id" type="hidden" [(ngModel)]="id" />-->
+        <input name="company" type="text" required [(ngModel)]="company" />
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>Contact</td>
+      <td>    <input name="contact" required type="text" [(ngModel)]="contact" /></td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>    <input name="country" required type="text" [(ngModel)]="country" /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="submit" value="{{valbutton}}" />
+      </td>
+    </tr>
+  </table>
+</form>
+
+<table id="customers">
+
+  <tr>
+    <th>Costumer Id</th>
+    <th>Company Name</th>
+    <th>Contact Name</th>
+    <th>Country</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let kk of Repdata">
+
+    <td>{{kk._id}}</td>
+    <td>{{kk.company}}</td>
+    <td>{{kk.contact}}</td>
+    <td>{{kk.country}}</td>
+    <td><a (click)="edit(kk)" style="color:blueviolet">Edit</a></td>
+    <td><a (click)="delete(kk._id)" style="color:blueviolet">Delete</a>  </td>
+  </tr>
+</table> 
