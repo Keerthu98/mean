@@ -16,7 +16,7 @@ IN CMD
 11. open new cmd run
 node server.js
 IN A CMD
-12. ng g s common –spec=false
+12. ng g s common â€“spec=false
 IN VS
 13. common.service.ts
 14. app.module.ts
@@ -27,3 +27,6 @@ IN A CMD
 18. ng server -o
 IN N cmd
 19. node server.js
+
+
+https://www.c-sharpcorner.com/article/angular-5-crud-opration-using-nodeexpressmongo/
